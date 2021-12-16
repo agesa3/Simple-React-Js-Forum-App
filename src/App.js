@@ -2,7 +2,13 @@ import Comments from "./comments/Comments";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
+    {/* center the heading  */}
+      <div className="row">
+        <div className="col-md-12">
+          <h1 className="text-center">MUSIC FORUM</h1>
+        </div>
+      </div>
       <h1>Hello monsterlessons</h1>
       <Comments
         commentsUrl="http://localhost:3004/comments"
