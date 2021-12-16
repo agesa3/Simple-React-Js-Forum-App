@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import {Form} from 'react-bootstrap';
 const CommentForm = ({
   handleSubmit,
   submitLabel,
@@ -16,11 +16,13 @@ const CommentForm = ({
   };
   return (
     <form onSubmit={onSubmit}>
-      <textarea
-        className="comment-form-textarea"
-        value={text}
+      <Form.Control
+        as="textarea"
+        placeholder="Leave a comment here"
+        style={{ height: "100px" }}
         onChange={(e) => setText(e.target.value)}
       />
+      <br />
       <button className="comment-form-button" disabled={isTextareaDisabled}>
         {submitLabel}
       </button>

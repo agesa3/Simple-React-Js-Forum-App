@@ -9,7 +9,6 @@ const App = () => {
           <h1 className="text-center">MUSIC FORUM</h1>
         </div>
       </div>
-      <h1>Hello monsterlessons</h1>
       <Comments
         commentsUrl="http://localhost:3004/comments"
         currentUserId="1"
